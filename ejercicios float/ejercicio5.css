@@ -1,0 +1,40 @@
+
+.div1{
+    display: inline-block;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.div2{
+    display: inline-block;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.div3{
+    display: inline-block;
+    background-color:  lightcoral;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.div4{
+    display: inline-block;
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+  
+}
+div{
+    width: 25%;
+    
+}
+maestra{
+    width: 100%;
+}

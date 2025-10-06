@@ -1,0 +1,43 @@
+.header,
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+*{
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clear{
+  display: flow-root;
+}
+.column {
+  padding: 15px;
+  width: 25%;
+  float: left;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  margin-right: 10px;
+  display: inline;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+
+}
+.content{
+  float: right;
+  width: 75%;
+}

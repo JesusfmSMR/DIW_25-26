@@ -1,0 +1,26 @@
+.fondo{
+    background-color: rgb(44, 42, 42);
+    
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+h1{
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fl{
+    float: left;
+    margin-right: 10px;
+}
+@media(max-width:600px){
+    .fl{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}

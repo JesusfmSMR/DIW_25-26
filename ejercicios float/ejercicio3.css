@@ -1,0 +1,13 @@
+.texto{
+    background-color: orange;
+}
+.div1{
+    background-color: lightcoral;
+    float: right;
+    padding: 30px;
+}
+.div2{
+    background-color: lightblue;
+    float: left;
+    padding: 3px;  
+}

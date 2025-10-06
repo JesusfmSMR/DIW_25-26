@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     * {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightpink;
+  padding: 20px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  width: 100%; /* Por defecto, ocupan todo el ancho */
+  padding: 15px;
+}
+aside {
+  background-color: lightblue;
+  padding: 20px;
+}
+.fl{
+    float: left;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+footer {
+  background-color: darkgray;
+  padding: 20px;
+}
+@media (min-width: 600px) {
+  .col-1 { width: 8.33333%; }
+.col-2 { width: 16.66667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333%; }
+.col-5 { width: 41.66667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33333%; }
+.col-8 { width: 66.66667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33333%; }
+.col-11 { width: 91.66667%; }
+.col-12 { width: 100%; }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+
+<div class="row">
+    <div class="col-3">
+        <aside>Aside</aside>
+    </div>
+    <div class="col-9">
+        <div class="row">
+        <div class="col-4"><article>Article</article></div>
+        <div class="col-4"><article>Article</article></div>
+        <div class="col-4"><article>Article</article></div>
+        <div class="col-6"><article>Article</article></div>
+        <div class="col-6"><article>Article</article></div>
+    </div>
+    </div>
+   
+</div>
+
+
+
+    
+
+    <footer>Footer</footer>
+  </body>
+</html>

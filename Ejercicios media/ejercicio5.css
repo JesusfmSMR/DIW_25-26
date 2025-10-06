@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.div1{
+    background-color: rgb(43, 41, 41);
+    width: 25%;
+    padding: 50px;
+    float: left;
+}
+.div2{
+    background-color: rgb(71, 70, 70);
+    width: 25%;
+    padding: 50px;
+    float: left;
+}
+.div3{
+    background-color: grey;
+    width: 25%;
+    padding: 50px;
+    float: left;
+}
+.div4{
+    background-color: rgb(156, 155, 155);
+    width: 25%;
+    padding: 50px;
+    float: left;
+}
+
+¡
+.padre{
+    width: 100%;
+    
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media(max-width:600px){
+    .div1,.div2,.div3,.div4{
+        width: 100%;
+    float: left;
+}
+}
+@media(min-width:601px) and (max-width:992px) {
+    .div1,.div2,.div3,.div4{
+        width: 50%;
+    float: left;
+}
+}
