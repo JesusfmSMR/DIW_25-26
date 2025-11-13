@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+
+}
+:root {
+    --color-header:#000;
+    --color--principal:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #dbdbdb;
+}
+
+img{
+   object-fit: cover;
+   width: 100%;
+   overflow: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    top: 0;
+    position: sticky;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.textoHeader {
+    vertical-align: middle;
+    text-decoration: none;
+
+
+}
+
+.imagenLogo {
+    height: 25px;
+    width: auto;
+    vertical-align: middle;
+
+}
+
+a {
+    color: white;
+}
+
+.botonLogin {
+
+    border: 1px solid white;
+    float: right;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 10%;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+}
+.titulo{
+    margin: 20px auto 20px auto;
+    text-align: center;
+    background-color: #fff;
+    
+    padding: 3px;
+    
+}
+.contenido{
+    width: 85%;
+    margin: 40px auto;
+    
+
+}
+.imagenContenido{
+    border-radius: 2%;
+}
+.textoImagen{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #fff;
+    margin-top: -20px;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    
+}

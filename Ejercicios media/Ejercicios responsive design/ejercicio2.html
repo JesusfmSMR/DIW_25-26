@@ -1,105 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-     * {
-  box-sizing: border-box;
-}
 
-header {
-  background-color: lightpink;
-  padding: 20px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-[class*="col-"] {
-  float: left;
-  width: 100%; /* Por defecto, ocupan todo el ancho */
-  padding: 15px;
-}
-aside {
-  background-color: lightblue;
-  padding: 20px;
-}
-.fl{
-    float: left;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-article {
-  background-color: lightgreen;
-  padding: 20px;
-}
+    header {
+      background-color: lightpink;
+      padding: 20px;
+    }
 
-footer {
-  background-color: darkgray;
-  padding: 20px;
-}
-@media (min-width: 600px) {
-  .col-sml-1 { width: 8.33333%; }
-.col-sml-2 { width: 16.66667%; }
-.col-sml-3 { width: 25%; }
-.col-sml-4 { width: 33.33333%; }
-.col-sml-5 { width: 41.66667%; }
-.col-sml-6 { width: 50%; }
-.col-sml-7 { width: 58.33333%; }
-.col-sml-8 { width: 66.66667%; }
-.col-sml-9 { width: 75%; }
-.col-sml-10 { width: 83.33333%; }
-.col-sml-11 { width: 91.66667%; }
-.col-sml-12 { width: 100%; }
-}
-@media (min-width: 750px) {
-  .col-sml-1 { width: 8.33333%; }
-.col-mid-2 { width: 16.66667%; }
-.col-mid-3 { width: 25%; }
-.col-mid-4 { width: 33.33333%; }
-.col-mid-5 { width: 41.66667%; }
-.col-mid-6 { width: 50%; }
-.col-mid-7 { width: 58.33333%; }
-.col-mid-8 { width: 66.66667%; }
-.col-mid-9 { width: 75%; }
-.col-mid-10 { width: 83.33333%; }
-.col-mid-11 { width: 91.66667%; }
-.col-mid-12 { width: 100%; }
-}
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Header</h1>
-    </header>
+    [class*="col-"] {
+      float: left;
+      width: 100%;
+      /* Por defecto, ocupan todo el ancho */
+      padding: 15px;
+    }
 
-<div class="row">
-    <div class="col-3">
-        <aside>Aside</aside>
-    </div>
-    <div class="col-9">
-        <div class="row">
-        <div class="col-sml-6 col-mid"><article>Article1</article></div>
-        <div class="col-sml-6"><article>Article2</article></div>
-        <div class="col-sml-12"><article>Article3</article></div>
-        <div class="col-sml-12"><article>Article4</article></div>
-        <div class="col-sml-12"><article>Article5</article></div>
+    aside {
+      background-color: lightblue;
+      padding: 20px;
+    }
+
+    .fl {
+      float: left;
+    }
+
+    article {
+      background-color: lightgreen;
         
-    </div>
-  
-    </div>
-    <div class="col-3">
+    }
+
+    footer {
+      background-color: darkgray;
+      padding: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .col-sml-1 {
+        width: 8.33333%;
+      }
+
+      .col-sml-2 {
+        width: 16.66667%;
+      }
+
+      .col-sml-3 {
+        width: 25%;
+      }
+
+      .col-sml-4 {
+        width: 33.33333%;
+      }
+
+      .col-sml-5 {
+        width: 41.66667%;
+      }
+
+      .col-sml-6 {
+        width: 50%;
+      }
+
+      .col-sml-7 {
+        width: 58.33333%;
+      }
+
+      .col-sml-8 {
+        width: 66.66667%;
+      }
+
+      .col-sml-9 {
+        width: 75%;
+      }
+
+      .col-sml-10 {
+        width: 83.33333%;
+      }
+
+      .col-sml-11 {
+        width: 91.66667%;
+      }
+
+      .col-sml-12 {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 750px) {
+      .col-mid-1 {
+        width: 8.33333%;
+      }
+
+      .col-mid-2 {
+        width: 16.66667%;
+      }
+
+      .col-mid-3 {
+        width: 25%;
+      }
+
+      .col-mid-4 {
+        width: 33.33333%;
+      }
+
+      .col-mid-5 {
+        width: 41.66667%;
+      }
+
+      .col-mid-6 {
+        width: 50%;
+      }
+
+      .col-mid-7 {
+        width: 58.33333%;
+      }
+
+      .col-mid-8 {
+        width: 66.66667%;
+      }
+
+      .col-mid-9 {
+        width: 75%;
+      }
+
+      .col-mid-10 {
+        width: 83.33333%;
+      }
+
+      .col-mid-11 {
+        width: 91.66667%;
+      }
+
+      .col-mid-12 {
+        width: 100%;
+      }
+
+      .fl {
+        float: left;
+      }
+
+      .fr {
+        float: right;
+      }
+    }
+    @media (min-width: 900px) {
+      .col-lg-1 { width: 8.33333%;}
+
+      .col-lg-2 {
+        width: 16.66667%;
+      }
+
+      .col-lg-3 {
+        width: 25%;
+      }
+
+      .col-lg-4 {
+        width: 33.33333%;
+      }
+
+      .col-lg-5 {
+        width: 41.66667%;
+      }
+
+      .col-lg-6 {
+        width: 50%;
+      }
+
+      .col-lg-7 {
+        width: 58.33333%;
+      }
+
+      .col-lg-8 {
+        width: 66.66667%;
+      }
+
+      .col-lg-9 {
+        width: 75%;
+      }
+
+      .col-lg-10 {
+        width: 83.33333%;
+      }
+
+      .col-lg-11 {
+        width: 91.66667%;
+      }
+
+      .col-lg-12 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-3 col-mid-3 ">
       <aside>Aside</aside>
+    </div>
+    <div class="col-mid-9">
+      <div class="col-mid-9">
+       
+          <div >
+            <div class="col-sml-6 col-mid-3 col-lg-6">
+              <article>Article1</article>
+            </div>
+            <div class="col-sml-6 col-mid-6 col-lg-6">
+              <article>Article2</article>
+            </div>
+          </div>
+          <div>
+            <div class="col-sml-12 col-mid-3 col-lg-12">
+              <article>Article3</article>
+            </div>
+          </div>
+          <div>
+            <div class="col-sml-12 col-mid-6 col-lg-6">
+              <article>Article4</article>
+            </div>
+            <div class="col-sml-12 col-mid-6 col-lg-6">
+              <article>Article5</article>
+            </div>
+          </div>
+
+
+        
+      </div>
+      <div class="col-mid-3 fr ">
+        <aside>Aside</aside>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
-    
 
-    <footer>Footer</footer>
-  </body>
+
+  <footer>Footer</footer>
+</body>
+
 </html>

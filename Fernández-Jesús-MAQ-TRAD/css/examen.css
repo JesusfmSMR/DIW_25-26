@@ -1,0 +1,76 @@
+:root{
+    --color-header:hsl(210, 29%, 24%);
+    --familiaLetra-def: 'Arial', Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--familiaLetra-def);
+}
+
+   
+
+
+
+header {
+    background-color: var(--color-header);
+    color: white;
+    top: 0;
+    position: sticky;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+    
+
+}
+
+.tituloHeader{
+    float: left;
+}
+
+
+
+a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+
+}
+
+
+    .enlaceHeader {
+        float: right;
+        vertical-align: middle;
+        padding: 5px;
+        color: #fff;
+        transition: background-color 0.3s ease; /* Añadir transición */
+    }
+
+    .enlaceHeader:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Efecto hover con menor opacidad */
+    }
+
+
+
+
+.fuenteTitulo {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    
+}
+.titulo{
+    background-color: blueviolet;
+    padding: 100px;   
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
